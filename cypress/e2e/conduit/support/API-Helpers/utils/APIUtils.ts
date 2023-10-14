@@ -11,7 +11,7 @@ declare global {
 }
 
 Cypress.Commands.add('addNewUser', (requestURL: string, userPayload: userAPIPayload) => {
-    return cy.api(
+    return cy.request(
         {
             method: 'POST',
             url: requestURL,
